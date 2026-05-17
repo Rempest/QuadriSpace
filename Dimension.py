@@ -22,8 +22,8 @@ class geometry_dimension(Node):
     def timer_callback(self):
         vec = Vector3()
         vec.x = -1.5
-        vec.y = 2.5
-        vec.z = 7.0
+        vec.y = 1.0
+        vec.z = 1.5
         self.vector_publisher.publish(vec)
         self.get_logger().info(
             f'[Vector3 sent]  x={vec.x}, y={vec.y}, z={vec.z}'
